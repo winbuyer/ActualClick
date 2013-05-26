@@ -1,0 +1,30 @@
+﻿a, u { text-decoration: none; display: inline; }
+a:hover { text-decoration: none; }
+a:link { text-decoration: none; }
+img { border: 0; }
+.actualclick-main-container { height: 90px; }
+.actualclick-left-image-container { float: left; margin-top: 12px; cursor: pointer; }
+
+.actualclick-one-product-container { border: 2px solid #009933; float: left; border-radius: 5px; height: 87px; width: 231px; background-color: #ffffff; box-shadow: 3px 3px 3px #888888; cursor: pointer; }
+
+.actualclick-product-image { float: left; margin-top: 14px; margin-left: 10px; height: 70px; width: 60px; }
+.actualclick-product-image img { max-width: 60px; max-height: 70px; }
+
+.actualclick-product-merchant-logo { float: left; margin-left: 10px; margin-top: 10px; height: 35px; width: 65px; }
+.actualclick-product-merchant-logo img { max-width: 65px; max-height: 35px; }
+.actualclick-product-price { float: right; margin-right: 19px; margin-top: 13px; }
+.actualclick-product-price div { color: #ff0000; font-size: 16px; font-family: Arial; font-weight: bold; }
+
+.actualclick-product-name { margin-left: 78px; margin-top: 48px; margin-right: 5px; }
+.actualclick-product-name div { color: #1122cc; font-size: 11px; font-family: Arial; float: right; text-transform: uppercase; text-decoration: underline; word-wrap: break-word; line-height: 15px; }
+
+.actualclick-right-image-container { float: left; }
+
+.actualclick-margin-left { margin-left: 0px; }
+.actualclick-product-divider { border: 2px solid #009933; width: 5px; margin-top: 45px; float: left; }
+
+.actual-click-qa { background-color: White; border: 3px solid red; width: 600px; height: 400px; overflow: auto; }
+.actual-click-qa-element { font-family: Tahoma; font-size: 18px; text-align: center; margin-top: 5px; padding-bottom: 5px; border-bottom: 1px dashed green; }
+.actual-click-qa-element-key { color: Green; }
+.actual-click-qa-element-value { color: Blue; }
+

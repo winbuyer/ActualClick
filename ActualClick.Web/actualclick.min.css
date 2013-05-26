@@ -1,0 +1,42 @@
+﻿#gritter-notice-wrapper{position:fixed;bottom:20px;right:0;z-index:9999;overflow:visible}
+#gritter-notice-wrapper *{overflow:visible}
+#gritter-notice-wrapper.top-left{left:20px;right:auto}
+#gritter-notice-wrapper.bottom-right{top:auto;left:auto;bottom:20px;right:20px}
+#gritter-notice-wrapper.bottom-left{top:auto;right:auto;bottom:20px;left:20px}
+.gritter-item-wrapper{position:relative;margin:0 0 10px 0}
+.hover .gritter-top{background-position:right -30px}
+.hover .gritter-bottom{background-position:bottom right}
+.gritter-item{display:block;color:#eee;padding:10px;font-size:11px;font-family:verdana}
+.hover .gritter-item{background-position:right -40px}
+.gritter-item p{padding:0;margin:0}
+.gritter-close{display:none;position:absolute;top:5px;left:-30px;background:url(/static/get-image?name=gritter.png) no-repeat left top;cursor:pointer;width:30px;height:30px}
+.gritter-about{display:block;position:absolute;top:6px;left:0;background:url(/static/get-image?name=gritter-about.png);cursor:pointer;width:30px;height:30px}
+.gritter-qa{display:block;position:absolute;top:-30px;left:0;background:url(/static/get-image?name=gritter-qa.png);cursor:pointer;width:30px;height:30px}
+.gritter-title{font-size:14px;font-weight:bold;padding:0 0 7px 0;display:block;text-shadow:1px 1px 0 #000}
+.gritter-image{width:48px;height:48px;float:left}
+.gritter-with-image,.gritter-without-image{padding:0 0 5px 0}
+.gritter-with-image{width:220px;float:right}
+.gritter-light .gritter-item,.gritter-light .gritter-bottom,.gritter-light .gritter-top,.gritter-close{background-image:url(/static/get-image?name=gritter-light.png);color:#222}
+.gritter-light .gritter-title{text-shadow:none}
+a,u{text-decoration:none;display:inline}
+a:hover{text-decoration:none}
+a:link{text-decoration:none}
+img{border:0}
+.actualclick-main-container{height:90px}
+.actualclick-left-image-container{float:left;margin-top:12px;cursor:pointer}
+.actualclick-one-product-container{border:2px solid #093;float:left;border-radius:5px;height:87px;width:231px;background-color:#fff;box-shadow:3px 3px 3px #888;cursor:pointer}
+.actualclick-product-image{float:left;margin-top:14px;margin-left:10px;height:70px;width:60px}
+.actualclick-product-image img{max-width:60px;max-height:70px}
+.actualclick-product-merchant-logo{float:left;margin-left:10px;margin-top:10px;height:35px;width:65px}
+.actualclick-product-merchant-logo img{max-width:65px;max-height:35px}
+.actualclick-product-price{float:right;margin-right:19px;margin-top:13px}
+.actualclick-product-price div{color:#f00;font-size:16px;font-family:Arial;font-weight:bold}
+.actualclick-product-name{margin-left:78px;margin-top:48px;margin-right:5px}
+.actualclick-product-name div{color:#12c;font-size:11px;font-family:Arial;float:right;text-transform:uppercase;text-decoration:underline;word-wrap:break-word;line-height:15px}
+.actualclick-right-image-container{float:left}
+.actualclick-margin-left{margin-left:0}
+.actualclick-product-divider{border:2px solid #093;width:5px;margin-top:45px;float:left}
+.actual-click-qa{background-color:White;border:3px solid red;width:600px;height:400px;overflow:auto}
+.actual-click-qa-element{font-family:Tahoma;font-size:18px;text-align:center;margin-top:5px;padding-bottom:5px;border-bottom:1px dashed green}
+.actual-click-qa-element-key{color:Green}
+.actual-click-qa-element-value{color:Blue}

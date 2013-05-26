@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@Model.keyword</title>
+    <link href="http://cdn.actualclick.com/css/market.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="margin: 0; padding: 0; width: @Model.width; height: @Model.height;">
+    @if (Model.products.Count > 0)
+    {
+        <div class="main-container">
+            <a href="@Model.more_deals_url" target="_blank">
+                <div class="left-image-container">
+                    <img src="http://cdn.actualclick.com/images/temp/More.png" alt='more' />
+                </div>
+            </a>
+            <div class="products-container">
+                @for (int i = 0; i < Model.products.Count; i++)
+                {
+                    <a href="@Model.products[i].product_url" target="_blank">
+                        <div class="one-product-container">
+                            <div class="product-image">
+                                <img src="@Model.products[i].product_image" alt="@Model.products[i].product_name"
+                        title="@Model.products[i].product_name" />
+                            </div>
+                            <div class="product-merchant-logo">
+                                <img src="@Model.products[i].merchant_image" alt="@Model.products[i].merchant_name"
+                        title="@Model.products[i].merchant_name" />
+                            </div>
+                            <div class="product-price">
+                                <div>
+                                    @Model.products[i].product_price
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                <div>
+                                    @Model.products[i].product_name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    if (i < Model.products.Count - 1)
+                    {
+                    <div class='product-divider'>
+                    </div>
+                    }
+                }
+            </div>
+            <div class="right-image-container">
+                <img src="http://cdn.actualclick.com/images/temp/TopDeals.png" alt='top-deals' />
+            </div>
+        </div>
+    }
+    else
+    {
+        <a href="http://www.shoppingedge.com" target="_blank">
+            <img src="http://cdn.actualclick.com/images/Market_Defualt.png" />
+        </a>
+    }
+</body>
+</html>

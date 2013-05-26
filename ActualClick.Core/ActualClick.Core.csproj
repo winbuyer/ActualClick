@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F448A0D1-3359-437E-A3BC-DAB9ECE97878}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ActualClick.Core</RootNamespace>
+    <AssemblyName>ActualClick.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Helper">
+      <HintPath>..\dlls\Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\dlls\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.8.1\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.8.1\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MoreLinq">
+      <HintPath>..\packages\morelinq.1.0.16006\lib\net35\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy">
+      <HintPath>..\packages\Nancy.0.17.1\lib\net40\Nancy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Hosting.Aspnet">
+      <HintPath>..\packages\Nancy.Hosting.Aspnet.0.17.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.ViewEngines.Razor">
+      <HintPath>..\packages\Nancy.Viewengines.Razor.0.17.1\lib\net40\Nancy.ViewEngines.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.5\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ShoppingEngine">
+      <HintPath>..\dlls\ShoppingEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="ShoppingEngine.XmlSerializers">
+      <HintPath>..\dlls\ShoppingEngine.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Razor.Unofficial">
+      <HintPath>..\packages\System.Web.Razor.Unofficial.2.0.2\lib\net40\System.Web.Razor.Unofficial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Widget.logic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\Widget.logic.dll</HintPath>
+    </Reference>
+    <Reference Include="WidgetSettings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WidgetSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.B2B.CSEsConsumer">
+      <HintPath>..\dlls\WinBuyer.B2B.CSEsConsumer.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.B2B.Extentions">
+      <HintPath>..\dlls\WinBuyer.B2B.Extentions.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.B2B.Matching.Settings">
+      <HintPath>..\dlls\WinBuyer.B2B.Matching.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.Infrastructure.BusinessMessages.Core">
+      <HintPath>..\dlls\WinBuyer.Infrastructure.BusinessMessages.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.Infrastructure.BusinessMessages.Interfaces">
+      <HintPath>..\dlls\WinBuyer.Infrastructure.BusinessMessages.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.Infrastructure.BusinessMessages.Queue.Core">
+      <HintPath>..\dlls\WinBuyer.Infrastructure.BusinessMessages.Queue.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.Infrastructure.BusinessMessages.Queue.Interfaces">
+      <HintPath>..\dlls\WinBuyer.Infrastructure.BusinessMessages.Queue.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.Infrastructure.BusinessMessages.Queue.Utils">
+      <HintPath>..\dlls\WinBuyer.Infrastructure.BusinessMessages.Queue.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.Infrastructure.Common">
+      <HintPath>..\dlls\WinBuyer.Infrastructure.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WinBuyer.Optimization.Model">
+      <HintPath>..\dlls\WinBuyer.Optimization.Model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booststrapper\BoostStrapper.cs" />
+    <Compile Include="Context\DealFinderContext.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Modules\ExtentionsModule.cs" />
+    <Compile Include="Modules\StaticModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\BusinessLoggerProvider.cs" />
+    <Compile Include="Providers\ExtentionsProvider.cs" />
+    <Compile Include="Providers\FilterProvider.cs" />
+    <Compile Include="Providers\GetSiteDataProvider.cs" />
+    <Compile Include="Providers\MarketRetargetingProvider.cs" />
+    <Compile Include="Providers\MarketTemplateProvider.cs" />
+    <Compile Include="Providers\PcmProvider.cs" />
+    <Compile Include="Providers\ProductsProvider.cs" />
+    <Compile Include="Providers\SortProvider.cs" />
+    <Compile Include="Providers\StaticProvider.cs" />
+    <Compile Include="Providers\TimerProvider.cs" />
+    <Compile Include="Providers\UrlMappingProvider.cs" />
+    <Compile Include="Responses\BinaryResponse.cs" />
+    <Compile Include="Responses\BinarySerializer.cs" />
+    <Compile Include="Responses\ByteArrayResponse.cs" />
+    <Compile Include="Responses\JsonResponse.cs" />
+    <Compile Include="Responses\JsonSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActualClick.Core.Etl\ActualClick.Core.Etl.csproj">
+      <Project>{F4D42323-896B-41A7-975A-FA6B1213FD1D}</Project>
+      <Name>ActualClick.Core.Etl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+if $(ConfigurationName) == Debug (
+xcopy /s /y /R "$(SolutionDir)packages\Nancy.Viewengines.Razor.0.17.1\BuildProviders\Nancy.ViewEngines.Razor.BuildProviders.dll" "$(ProjectDir)bin\"
+xcopy /s /y /R "$(SolutionDir)packages\Nancy.Viewengines.Razor.0.17.1\lib\Net40\Nancy.ViewEngines.Razor.dll" "$(ProjectDir)bin\"
+)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

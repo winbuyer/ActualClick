@@ -1,0 +1,1 @@
+﻿{ "UseOldLoggerImpl" : "false", "UseNewLoggerImpl" : "true", "writeQueuePath" : "FORMATNAME:DIRECT=TCP:216.93.178.161\private$\test" }
